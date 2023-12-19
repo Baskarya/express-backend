@@ -19,8 +19,8 @@ class BookmarksServices {
     this.collectionRef = this.firestore.collection(this.collection);
   }
 
-  async getBookmarkByUsername(username) {
-    const querySnapshot = await this.collectionRef.doc(username).get();
+  async getBookmarkByUid(uid) {
+    const querySnapshot = await this.collectionRef.doc(uid).get();
     const bookmarks = {};
 
     if (querySnapshot.empty) {
@@ -49,8 +49,8 @@ class BookmarksServices {
     return bookmarks;
   }
 
-  async getBookmarkArticlesByUsername(username) {
-    const querySnapshot = await this.collectionRef.doc(username).get();
+  async getBookmarkArticlesByUid(uid) {
+    const querySnapshot = await this.collectionRef.doc(uid).get();
     const result = querySnapshot.data();
 
     if (querySnapshot.empty) {
@@ -65,8 +65,8 @@ class BookmarksServices {
     return promises;
   }
 
-  async getBookmarkCustomsByUsername(username) {
-    const querySnapshot = await this.collectionRef.doc(username).get();
+  async getBookmarkCustomsByUid(uid) {
+    const querySnapshot = await this.collectionRef.doc(uid).get();
     const result = querySnapshot.data();
 
     if (querySnapshot.empty) {
@@ -81,8 +81,8 @@ class BookmarksServices {
     return promises;
   }
 
-  async getBookmarkBatikByUsername(username) {
-    const querySnapshot = await this.collectionRef.doc(username).get();
+  async getBookmarkBatikByUid(uid) {
+    const querySnapshot = await this.collectionRef.doc(uid).get();
     const result = querySnapshot.data();
 
     if (querySnapshot.empty) {
@@ -97,11 +97,11 @@ class BookmarksServices {
     return promises;
   }
 
-  async postBookmark(username, contentId) {
+  async postBookmark(uid, contentId) {
     try {
       const contentType = contentId.split('-')[0];
       const bookmark = { contentId: contentId };
-      const documentRef = this.collectionRef.doc(username);
+      const documentRef = this.collectionRef.doc(uid);
 
       const docSnapshot = await documentRef.get();
 
@@ -121,7 +121,7 @@ class BookmarksServices {
     }
   }
 
-  async deleteBookmarkById(username, contentId) {
+  async deleteBookmarkById(uid, contentId) {
     const contentType = contentId.split('-')[0];
     const valueToRemove = { 'contentId': contentId };
     let collection;
@@ -139,7 +139,7 @@ class BookmarksServices {
       throw new NotFoundError('Artikel Tidak Ditemukan');
     }
 
-    await this.collectionRef.doc(username).update({
+    await this.collectionRef.doc(uid).update({
       [contentType]: admin.firestore.FieldValue.arrayRemove(valueToRemove),
     });
 

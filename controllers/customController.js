@@ -23,9 +23,9 @@ const getCustomById = async (req, res) => {
 
 const postCustom = async (req, res) => {
   try {
-    const { username, imageUrl, batikName } = req.body;
+    const { uid, imageUrl, batikName } = req.body;
     const custom = await customService.postCustom(imageUrl, batikName);
-    await bookmarkService.postBookmark(username, custom.id);
+    await bookmarkService.postBookmark(uid, custom.id);
     res.status(201).json({
       status: "success",
       error: false,
