@@ -79,20 +79,28 @@ class CustomService {
       const previewPathLocal = `custom-${timestamp}.png`;
       const previewPathUrl = `${bucketFolder}/${previewPathLocal}`;
   
-      // Save the final image
-      await finalImage.toFile(previewPathLocal);
-  
-      // Upload to Firebase Storage or perform any other necessary operations
+      // Upload to Firebase Storage
       const blob = bucket.file(previewPathUrl);
-      await blob.save(fs.createReadStream(previewPathLocal), { contentType: 'image/png' });
+      const uploadStream = blob.createWriteStream({
+        contentType: 'image/png',
+        resumable: false, // Set to true for larger files
+      });
   
-      // Cleanup the local file
-      fs.unlinkSync(previewPathLocal);
+      await finalImage.pipe(uploadStream); // Send image buffer directly to Firebase Storage
   
-      const urlCustom = `https://firebasestorage.googleapis.com/v0/b/baskaryaapp.appspot.com/o/${bucketFolder}%2F${previewPathLocal}?alt=media`;
-      return urlCustom;
+      // Handle stream events (optional)
+      return new Promise((resolve, reject) => {
+        uploadStream
+          .on('finish', () => {
+            const urlCustom = `https://firebasestorage.googleapis.com/v0/b/baskaryaapp.appspot.com/o/${encodeURIComponent(bucketFolder)}/${encodeURIComponent(previewPathLocal)}?alt=media`;
+            resolve(urlCustom);
+          })
+          .on('error', (error) => {
+            reject(new ClientError(error.message));
+          });
+      });
     } catch (error) {
-      throw new ClientError(error.message)
+      throw new ClientError(error.message);
     }
   }
 
