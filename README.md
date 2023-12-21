@@ -97,12 +97,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`GET http://localhost:3000/api/batik/:id`
+`GET http://{{endpoint}}/api/batik/:id`
 
 #### Request
 
 - **Method:** GET
-- **URL:** `http://localhost:3000/api/batik/:id`
+- **URL:** `http://{{endpoint}}/api/batik/:id`
 - **Parameters:**
   - `id` (Path Parameter): The unique identifier of the batik.
 
@@ -112,12 +112,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`GET http://localhost:3000/api/batik/:id`
+`GET http://{{endpoint}}/api/batik/:id`
 
 #### Request
 
 - **Method:** GET
-- **URL:** `http://localhost:3000/api/batik/:id`
+- **URL:** `http://{{endpoint}}/api/batik/:id`
 - **Parameters:**
   - `id` (Path Parameter): Incorrect batik identifier.
 
@@ -127,12 +127,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`POST http://localhost:3000/api/bookmarks/batik`
+`POST http://{{endpoint}}/api/bookmarks/batik`
 
 #### Request
 
 - **Method:** POST
-- **URL:** `http://localhost:3000/api/bookmarks/batik`
+- **URL:** `http://{{endpoint}}/api/bookmarks/batik`
 - **Body:**
   - `file` (Form Data): Batik image file to bookmark.
 
@@ -142,12 +142,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`GET http://localhost:3000/api/bookmarks/batik/:username`
+`GET http://{{endpoint}}/api/bookmarks/batik/:username`
 
 #### Request
 
 - **Method:** GET
-- **URL:** `http://localhost:3000/api/bookmarks/batik/:username`
+- **URL:** `http://{{endpoint}}/api/bookmarks/batik/:username`
 - **Parameters:**
   - `username` (Path Parameter): User's username.
 
@@ -157,12 +157,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`DELETE http://localhost:3000/api/bookmarks/:username/:batikId`
+`DELETE http://{{endpoint}}/api/bookmarks/:username/:batikId`
 
 #### Request
 
 - **Method:** DELETE
-- **URL:** `http://localhost:3000/api/bookmarks/:username/:batikId`
+- **URL:** `http://{{endpoint}}/api/bookmarks/:username/:batikId`
 - **Parameters:**
   - `username` (Path Parameter): User's username.
   - `batikId` (Path Parameter): Identifier of the batik to be removed from bookmarks.
@@ -173,12 +173,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`GET http://localhost:3000/api/search/batik`
+`GET http://{{endpoint}}/api/search/batik`
 
 #### Request
 
 - **Method:** GET
-- **URL:** `http://localhost:3000/api/search/batik`
+- **URL:** `http://{{endpoint}}/api/search/batik`
 - **Parameters:**
   - `keyword` (Query Parameter): Keyword for batik search.
 
@@ -188,12 +188,12 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
 
 #### Endpoint
 
-`POST http://localhost:3000/api/machine-learning`
+`POST http://{{endpoint}}/api/machine-learning`
 
 #### Request
 
 - **Method:** POST
-- **URL:** `http://localhost:3000/api/machine-learning`
+- **URL:** `http://{{endpoint}}/api/machine-learning`
 - **Body:**
   - `file` (Form Data): Image file for machine learning analysis.
 
