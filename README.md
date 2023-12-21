@@ -2,9 +2,25 @@
 
 <div align="center">
     <h1>BASKARYA EXPRESS BACKEND API</h1>
-    <h3>◦ HTTPStatus Exception: 404</h3>
     <h3>◦ Developed with the software and tools below.</h3>
 </div>
+
+[![GitHub license](https://img.shields.io/github/license/your-username/express-backend)](https://github.com/your-username/express-backend/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/your-username/express-backend)](https://github.com/your-username/express-backend/issues)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/express-backend)](https://github.com/your-username/express-backend/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/your-username/express-backend)](https://github.com/your-username/express-backend/network)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/your-username/express-backend)](https://github.com/your-username/express-backend/pulls)
+
+[![Node.js version](https://img.shields.io/badge/Node.js-v14.17.5-green)](https://nodejs.org/)
+[![Express version](https://img.shields.io/badge/Express-v4.18.2-blue)](https://expressjs.com/)
+[![Nodemon version](https://img.shields.io/badge/Nodemon-v3.0.2-yellow)](https://nodemon.io/)
+[![License](https://img.shields.io/badge/License-ISC-yellowgreen)](https://opensource.org/licenses/ISC)
+
+
+<img src="https://img.shields.io/github/license/Baskarya/express-backend?style=flat&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/github/last-commit/Baskarya/express-backend?style=flat&color=5D6D7E" alt="git-last-commit" />
+<img src="https://img.shields.io/github/commit-activity/m/Baskarya/express-backend?style=flat&color=5D6D7E" alt="GitHub commit activity" />
+<img src="https://img.shields.io/github/languages/top/Baskarya/express-backend?style=flat&color=5D6D7E" alt="GitHub top language" />
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -56,10 +72,6 @@ BASKARYA is an innovative project that revolves around the rich cultural heritag
 ### Search
 
 - **Search Batik by Keyword:** Search for batik designs based on keywords, facilitating a user-friendly exploration experience.
-
-### Machine Learning
-
-- **Machine Learning Feature:** Provide an endpoint for machine learning analysis of batik images, enhancing the platform's capabilities.
 
 ### Usage
 
@@ -183,20 +195,6 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
   - `keyword` (Query Parameter): Keyword for batik search.
 
 ---
-
-### Machine Learning Feature
-
-#### Endpoint
-
-`POST http://{{endpoint}}/api/machine-learning`
-
-#### Request
-
-- **Method:** POST
-- **URL:** `http://{{endpoint}}/api/machine-learning`
-- **Body:**
-  - `file` (Form Data): Image file for machine learning analysis.
-
 
 ## Repository Structure
 
