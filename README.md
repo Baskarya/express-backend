@@ -30,11 +30,8 @@
 - [ License](#-license)
 - [ Acknowledgments](#-acknowledgments)
 
----
 
 ## Overview
-
-# BASKARYA Project
 
 ---
 
@@ -63,39 +60,37 @@ BASKARYA is an innovative project that revolves around the rich cultural heritag
 
 - **Machine Learning Feature:** Provide an endpoint for machine learning analysis of batik images, enhancing the platform's capabilities.
 
-## Usage
+### Usage
 
 The BASKARYA API is designed to be developer-friendly, offering a range of endpoints for seamless integration into applications and services. Developers can explore batik details, implement bookmarking functionality, enable search capabilities, and leverage machine learning for image analysis.
 
-## How to Contribute
+### How to Contribute
 
 Contributions to the BASKARYA project are welcome! Whether you are interested in adding new features, fixing bugs, or improving documentation, please follow the contribution guidelines outlined in the [CONTRIBUTING.md](link-to-contributing) file.
 
-## Getting Started
-
-To get started with the BASKARYA project, refer to the [API Documentation](link-to-api-documentation) for comprehensive details on available endpoints, request formats, and response structures.
+### Getting Started
+To get started with the BASKARYA project, refer to the [API Documentation](https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748) for comprehensive details on available endpoints, request formats, and response structures.
 
 ---
 
 ## Documentation
 
----
 For more detail API Documentation, [Documentation](https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748).
 
 `https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748`
 
 
+---
+
 ## API Service Endpoint
 
----
 `https://baskarya-app-veuznuhx2a-et.a.run.app/`
 [Endpoint](https://baskarya-app-veuznuhx2a-et.a.run.app/).
 
 
+---
 
 ## Features
-
----
 
 ### Get Batik by ID
 
@@ -238,7 +233,6 @@ For more detail API Documentation, [Documentation](https://documenter.getpostman
     └────── └── CustomService.js
 
 ```
-
 ---
 
 ## Modules
