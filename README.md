@@ -1,9 +1,8 @@
 <!---->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
+  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-node.svg" width="100" />
   <h1>BASKARYA EXPRESS BACKEND API</h1>
-  <hr>
   <h3>◦Developed with the software and tools below.</h3>
 
   [![Node.js version](https://img.shields.io/badge/Node.js-v14.17.5-green)](https://nodejs.org/)
