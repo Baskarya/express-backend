@@ -34,13 +34,174 @@
 
 ## Overview
 
-HTTPStatus Exception: 404
+# BASKARYA Project
 
 ---
 
+BASKARYA is an innovative project that revolves around the rich cultural heritage of batik, a traditional Indonesian art form. The project encompasses a web application and an API, providing a platform for users to explore, bookmark, and engage with batik-related content. Leveraging machine learning capabilities, BASKARYA offers additional features for image analysis and recognition.
+
+## Key Features
+
+### Batik Exploration
+
+- **Get Batik by ID:** Retrieve detailed information about a specific batik using its unique identifier.
+- **Get Batik by Wrong ID:** A sample endpoint showcasing error handling for incorrect batik identifiers.
+
+### Bookmarking
+
+- **Post Bookmark Batik:** Allow users to bookmark their favorite batik designs by uploading an image file.
+
+- **Get Bookmark Batik by User:** Retrieve a user's bookmarked batik designs using their username.
+
+- **Delete Batik Bookmark by User:** Remove a batik design from a user's bookmarks using their username and batik ID.
+
+### Search
+
+- **Search Batik by Keyword:** Search for batik designs based on keywords, facilitating a user-friendly exploration experience.
+
+### Machine Learning
+
+- **Machine Learning Feature:** Provide an endpoint for machine learning analysis of batik images, enhancing the platform's capabilities.
+
+## Usage
+
+The BASKARYA API is designed to be developer-friendly, offering a range of endpoints for seamless integration into applications and services. Developers can explore batik details, implement bookmarking functionality, enable search capabilities, and leverage machine learning for image analysis.
+
+## How to Contribute
+
+Contributions to the BASKARYA project are welcome! Whether you are interested in adding new features, fixing bugs, or improving documentation, please follow the contribution guidelines outlined in the [CONTRIBUTING.md](link-to-contributing) file.
+
+## Getting Started
+
+To get started with the BASKARYA project, refer to the [API Documentation](link-to-api-documentation) for comprehensive details on available endpoints, request formats, and response structures.
+
+## License
+
+The BASKARYA project is licensed under the [MIT License](link-to-license). Feel free to use, modify, and distribute the project in accordance with the terms of the license.
+
+For more information, visit the official [BASKARYA website](link-to-website).
+
+---
+
+## Documentation
+
+---
+[Documentation](https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748)
+---
+
+## API Service Endpoint
+---
+`https://baskarya-app-veuznuhx2a-et.a.run.app/`
+---
+
+
 ## Features
 
-HTTPStatus Exception: 404
+---
+
+### Get Batik by ID
+
+#### Endpoint
+
+`GET http://localhost:3000/api/batik/:id`
+
+#### Request
+
+- **Method:** GET
+- **URL:** `http://localhost:3000/api/batik/:id`
+- **Parameters:**
+  - `id` (Path Parameter): The unique identifier of the batik.
+
+---
+
+### Get Batik by Wrong ID
+
+#### Endpoint
+
+`GET http://localhost:3000/api/batik/:id`
+
+#### Request
+
+- **Method:** GET
+- **URL:** `http://localhost:3000/api/batik/:id`
+- **Parameters:**
+  - `id` (Path Parameter): Incorrect batik identifier.
+
+---
+
+### Post Bookmark Batik
+
+#### Endpoint
+
+`POST http://localhost:3000/api/bookmarks/batik`
+
+#### Request
+
+- **Method:** POST
+- **URL:** `http://localhost:3000/api/bookmarks/batik`
+- **Body:**
+  - `file` (Form Data): Batik image file to bookmark.
+
+---
+
+### Get Bookmark Batik by User
+
+#### Endpoint
+
+`GET http://localhost:3000/api/bookmarks/batik/:username`
+
+#### Request
+
+- **Method:** GET
+- **URL:** `http://localhost:3000/api/bookmarks/batik/:username`
+- **Parameters:**
+  - `username` (Path Parameter): User's username.
+
+---
+
+### Delete Batik Bookmark by User
+
+#### Endpoint
+
+`DELETE http://localhost:3000/api/bookmarks/:username/:batikId`
+
+#### Request
+
+- **Method:** DELETE
+- **URL:** `http://localhost:3000/api/bookmarks/:username/:batikId`
+- **Parameters:**
+  - `username` (Path Parameter): User's username.
+  - `batikId` (Path Parameter): Identifier of the batik to be removed from bookmarks.
+
+---
+
+### Search Batik by Keyword
+
+#### Endpoint
+
+`GET http://localhost:3000/api/search/batik`
+
+#### Request
+
+- **Method:** GET
+- **URL:** `http://localhost:3000/api/search/batik`
+- **Parameters:**
+  - `keyword` (Query Parameter): Keyword for batik search.
+
+---
+
+### Machine Learning Feature
+
+#### Endpoint
+
+`POST http://localhost:3000/api/machine-learning`
+
+#### Request
+
+- **Method:** POST
+- **URL:** `http://localhost:3000/api/machine-learning`
+- **Body:**
+  - `file` (Form Data): Image file for machine learning analysis.
 
 ---
 
