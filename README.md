@@ -1,7 +1,9 @@
 <!---->
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
   <h1>BASKARYA EXPRESS BACKEND API</h1>
+  <hr>
   <h3>◦Developed with the software and tools below.</h3>
 
   [![Node.js version](https://img.shields.io/badge/Node.js-v14.17.5-green)](https://nodejs.org/)
@@ -15,7 +17,7 @@
   <img src="https://img.shields.io/github/commit-activity/m/Baskarya/express-backend?style=flat&color=5D6D7E" alt="GitHub commit activity" />
   <img src="https://img.shields.io/github/languages/top/Baskarya/express-backend?style=flat&color=5D6D7E" alt="GitHub top language" />
 </div>
-<hr>
+<br>
 <p align="center">
   <a href="https://skillicons.dev">
     <img src=https://skillicons.dev/icons?i=express,js,git,github />
@@ -432,6 +434,6 @@ This project is protected under the [SELECT-A-LICENSE](https://choosealicense.co
 
 - List any resources, contributors, inspiration, etc. here.
 
-[**Return**](#Top)
+[**Back to Top**](#Top)
 
 ---
