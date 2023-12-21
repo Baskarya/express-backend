@@ -75,24 +75,22 @@ Contributions to the BASKARYA project are welcome! Whether you are interested in
 
 To get started with the BASKARYA project, refer to the [API Documentation](link-to-api-documentation) for comprehensive details on available endpoints, request formats, and response structures.
 
-## License
-
-The BASKARYA project is licensed under the [MIT License](link-to-license). Feel free to use, modify, and distribute the project in accordance with the terms of the license.
-
-For more information, visit the official [BASKARYA website](link-to-website).
-
 ---
 
 ## Documentation
 
 ---
-[Documentation](https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748)
----
+For more detail API Documentation, [Documentation](https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748).
+
+`https://documenter.getpostman.com/view/25932120/2s9YkkfNgo#928f8e75-8575-4d6a-b4d7-9809e002a748`
+
 
 ## API Service Endpoint
+
 ---
 `https://baskarya-app-veuznuhx2a-et.a.run.app/`
----
+[Endpoint](https://baskarya-app-veuznuhx2a-et.a.run.app/).
+
 
 
 ## Features
@@ -203,7 +201,6 @@ For more information, visit the official [BASKARYA website](link-to-website).
 - **Body:**
   - `file` (Form Data): Image file for machine learning analysis.
 
----
 
 ## Repository Structure
 
@@ -252,7 +249,6 @@ For more information, visit the official [BASKARYA website](link-to-website).
 | -------------------------------------------------------------------------------------------- | ------------------------- |
 | [package-lock.json](https://github.com/Baskarya/express-backend/blob/main/package-lock.json) | HTTPStatus Exception: 404 |
 | [app.js](https://github.com/Baskarya/express-backend/blob/main/app.js)                       | HTTPStatus Exception: 404 |
-| [tesdb.js](https://github.com/Baskarya/express-backend/blob/main/tesdb.js)                   | HTTPStatus Exception: 404 |
 | [package.json](https://github.com/Baskarya/express-backend/blob/main/package.json)           | HTTPStatus Exception: 404 |
 
 </details>
@@ -265,6 +261,7 @@ For more information, visit the official [BASKARYA website](link-to-website).
 | [searchRouter.js](https://github.com/Baskarya/express-backend/blob/main/router/searchRouter.js)     | HTTPStatus Exception: 404 |
 | [bookmarkRouter.js](https://github.com/Baskarya/express-backend/blob/main/router/bookmarkRouter.js) | HTTPStatus Exception: 404 |
 | [articlesRouter.js](https://github.com/Baskarya/express-backend/blob/main/router/articlesRouter.js) | HTTPStatus Exception: 404 |
+| [customRouter.js](https://github.com/Baskarya/express-backend/blob/main/router/customRouter.js) | HTTPStatus Exception: 404 |
 
 </details>
 
@@ -284,6 +281,7 @@ For more information, visit the official [BASKARYA website](link-to-website).
 | [bookmarkController.js](https://github.com/Baskarya/express-backend/blob/main/controllers/bookmarkController.js) | HTTPStatus Exception: 404 |
 | [articleController.js](https://github.com/Baskarya/express-backend/blob/main/controllers/articleController.js)   | HTTPStatus Exception: 404 |
 | [searchController.js](https://github.com/Baskarya/express-backend/blob/main/controllers/searchController.js)     | HTTPStatus Exception: 404 |
+| [customController.js](https://github.com/Baskarya/express-backend/blob/main/controllers/customController.js)     | HTTPStatus Exception: 404 |
 
 </details>
 
@@ -294,6 +292,7 @@ For more information, visit the official [BASKARYA website](link-to-website).
 | [ArticlesService.js](https://github.com/Baskarya/express-backend/blob/main/services/firestore/ArticlesService.js)   | HTTPStatus Exception: 404 |
 | [BookmarksService.js](https://github.com/Baskarya/express-backend/blob/main/services/firestore/BookmarksService.js) | HTTPStatus Exception: 404 |
 | [BatikService.js](https://github.com/Baskarya/express-backend/blob/main/services/firestore/BatikService.js)         | HTTPStatus Exception: 404 |
+| [CustomService.js](https://github.com/Baskarya/express-backend/blob/main/services/firestore/CustomService.js)         | HTTPStatus Exception: 404 |
 
 </details>
 
