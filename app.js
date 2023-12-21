@@ -9,7 +9,6 @@ const customRouter = require('./router/customRouter');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(upload.array());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', articlesRouter); 
