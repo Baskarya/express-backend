@@ -74,7 +74,7 @@ class BookmarksServices {
     }
 
     const promises = await Promise.all(result['custom'].map(async (content) => {
-      const article = await articlesService.getCustomById(content.contentId);
+      const article = await customService.getCustomById(content.contentId);
       return article;
     }));
 
