@@ -229,10 +229,10 @@ npm test
 ## Project Roadmap
 
 > - [x] `ℹ️  Task 1: Article API`
-> - [ ] `ℹ️  Task 2: Batik API`
-> - [ ] `ℹ️  Task 3: Bookmark API`
-> - [ ] `ℹ️  Task 4: Search API`
-> - [ ] `ℹ️  Task 5: Customization API`
+> - [x] `ℹ️  Task 2: Batik API`
+> - [x] `ℹ️  Task 3: Bookmark API`
+> - [x] `ℹ️  Task 4: Search API`
+> - [x] `ℹ️  Task 5: Customization API`
 
 ---
 
