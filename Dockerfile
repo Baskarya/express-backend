@@ -1,13 +1,20 @@
-FROM node:20.10-alpine
+# Gunakan image Node.js versi terbaru sebagai base image
+FROM node:latest
 
-WORKDIR /app
+# Set kerja direktori di dalam container
+WORKDIR /usr/src/app
 
-COPY package*json /app
+# Salin file package.json dan package-lock.json (jika ada) ke dalam container
+COPY package*.json ./
 
+# Install dependencies
 RUN npm install
 
-COPY . /app
+# Salin kode aplikasi ke dalam container
+COPY . .
 
+# Expose port yang digunakan oleh aplikasi
 EXPOSE 8080
 
-CMD [ "npm", "run", "start" ]
+# Perintah untuk menjalankan aplikasi saat container dijalankan
+CMD ["node", "app.js"]
