@@ -6,18 +6,7 @@ const batikRouter = require('./router/batikRouter');
 const bookmarkRouter = require('./router/bookmarkRouter');
 const searchRouter = require('./router/searchRouter');
 const customRouter = require('./router/customRouter');
-const multer = require('multer');
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/');
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname);
-  },
-});
-
-const upload = multer();
 const app = express();
 app.use(bodyParser.json());
 app.use(upload.array());
