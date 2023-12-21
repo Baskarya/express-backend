@@ -44,7 +44,7 @@
 
 ## Overview
 
-BASKARYA is an innovative project that revolves around the rich cultural heritage of batik, a traditional Indonesian art form. The project encompasses a web application and an API, providing a platform for users to explore, bookmark, and engage with batik-related content. Leveraging machine learning capabilities, BASKARYA offers additional features for image analysis and recognition..
+BASKARYA is an innovative project that revolves around the rich cultural heritage of batik, a traditional Indonesian art form. The project encompasses a web application and an API, providing a platform for users to explore, bookmark, and engage with batik-related content. Leveraging machine learning capabilities, BASKARYA offers additional features for image analysis and recognition.
 
 ---
 
